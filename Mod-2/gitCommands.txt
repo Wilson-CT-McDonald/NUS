@@ -1,0 +1,9 @@
+git --version
+git config --global --list
+git status
+git log    
+//local code -> staging -> Commit
+git diff
+git add .     
+git commit -m"xxxx"
+git rm
