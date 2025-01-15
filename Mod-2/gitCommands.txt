@@ -7,3 +7,6 @@ git diff
 git add .     
 git commit -m"xxxx"
 git rm
+
+git merge
+git rebase
