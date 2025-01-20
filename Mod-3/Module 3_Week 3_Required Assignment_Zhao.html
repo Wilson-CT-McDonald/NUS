@@ -38,6 +38,23 @@
                 console.log("Page has loaded successfully.");
             }
         </script>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#lucario">
+                        About Lucario    
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#figures">
+                        Lucario's figure   
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body onload="displayAlert(); logMessage();">
         <h1>Welcome to Wilson's Webpage</h1>
@@ -55,5 +72,75 @@
             <li>Wilson Parking</li>
             <li>Hopefully me in the future</li>
         </ul>
+        <!--Line Breaker-->
+        <hr>
+        <h2>Below has nothing to do with Wilson</h2>
+        <figure>
+            <img src="img/Lucario.jpg" alt="Lucario" title="This is Lucario and has nothing to do with Wilson">
+            <figcaption>Lucario</figcaption>
+        </figure>
+        <main>
+            <article id="lucario">
+                <h2>About <abbr title="To test the abbr function">Lucario</abbr></h2>
+                <p>
+                    <h3>I want to catch Lucario</h3>
+                    <details>
+                        <summary>Expand to see how to catch in Platinum</summary>
+                        <p>Beat the Steel gym first then go to steel island, an egg would be given and that is Lucario</p>
+                    </details>
+                </p>
+            </article>
+
+            <article id="figures">
+                <h2>Lucario's figures</h2>
+                <!--Table consists of 4 parts: cap, thead, table body and tFoot-->
+                <table>
+                    <!--Caption is the title of the table-->
+                    <caption>Statistics</caption>
+                    <!--<tr> stands for table row, 3 sets of <tr> mean 3 rows, inside <tr> having <tr> stands for table row-->
+                    <thead>
+                        <tr>
+                            <td>Categories</td>
+                            <td>Features</td>
+                            <td>Figures</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HP</td>
+                            <td>HP</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Physical</td>
+                            <td>Attack</td>
+                            <td>110</td>
+                        </tr>
+                        <tr>
+                            <td>Defense</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Special</td>
+                            <td>Attack</td>
+                            <td>115</td>
+                        </tr>
+                        <tr>
+                            <td>Defense</td>
+                            <td>70</td>
+                        </tr>
+                    </tbody>
+                    <!--Foot-->
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total: 525</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+        </main>
+        <footer>
+            <p>Copyright &copy; Bulbapedia</p>
+        </footer>
     </body>
 </html>
