@@ -1,0 +1,141 @@
+/* apply to all 
+   border-box: will count the entire border includes padding and content together
+   content-box: will set the content only but not the padding 
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/* Element Selectors */
+body {
+  font-size: medium;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background-color: lightblue;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  /* Transitions for smooth hover effects */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+main {
+  padding: 1em;
+}
+
+p {
+  font-size: medium;
+  color: black;
+  word-spacing: 0.1em;
+  /* text-decoration: underline; */
+}
+
+/* Class selectors representing by . */
+.red {
+  color: rgb(126, 11, 11);
+}
+
+/* id selectors representing by # */
+#earlyLife {
+  color: rgba(8, 8, 136, 0.8);
+  font-style: italic;
+}
+
+/* span */
+p span {
+  font-weight: bolder;
+}
+
+/* Button-like hover effect for sections */
+.lineThrough {
+  text-decoration: line-through;
+}
+
+#careerSection {
+  margin-bottom: 5em;
+  transition: box-shadow 0.3s ease;
+}
+
+#careerSection:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* For links effects */
+a {
+  cursor: pointer;
+}
+
+a:focus {
+  outline: 2px dashed lightsalmon;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+a:active {
+  color: red;
+}
+
+/*To inherit the body setting*/
+input,
+button {
+  font: inherit;
+}
+
+footer {
+  background-color: lightblue;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+#footer {
+  border: 1px dashed white;
+  border-bottom-width: 3px;
+  border-bottom-style: dotted;
+  border-bottom-color: whitesmoke;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 1em;
+  outline: 2px solid lightgoldenrodyellow;
+  /*outline-offset: -20px*/
+}
+
+/* Flexbox layout for larger screens */
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  section {
+    flex: 1 1 calc(33.333% - 2rem);
+  }
+}
