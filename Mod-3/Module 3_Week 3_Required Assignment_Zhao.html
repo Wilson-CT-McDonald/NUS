@@ -1,11 +1,14 @@
 <!--Q1-->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head> <!--brain of the document-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width", initial-scale="1.0">
         <meta name="description" content="A sample webpage by Wilson">
+
         <title>Wilson's Webpage Demo</title>
+
+        <!-- Internal CSS -->
         <style>
             body {
                 background-color:aliceblue;
@@ -17,6 +20,11 @@
             }
             p {
                 font-family: 'Times New Roman', Times, serif;
+                padding: 15px; 
+                /* 
+                padding: top right bottom left Top&Bottom Left&Right
+                padding: 2px 3px   5px    8px  10px       15px
+                */
             }
             h2 {
                 font-size:large;
@@ -28,6 +36,10 @@
             }
 
         </style>
+        
+        <!-- External CSS -->
+        <link rel="stylesheet" href="style.css">
+
         <script>
             // JavaScript function to display an alert
             function displayAlert() {
@@ -38,6 +50,7 @@
                 console.log("Page has loaded successfully.");
             }
         </script>
+
         <nav>
             <ul>
                 <li>
@@ -54,8 +67,8 @@
                 </li>
             </ul>
         </nav>
-        <link rel="stylesheet" href="style.css">
     </head>
+
     <body onload="displayAlert(); logMessage();">
         <h1>Welcome to Wilson's Webpage</h1>
         <p>I am Wilson, and let me tell you more about Wilson</p>
@@ -75,7 +88,7 @@
         <hr>
         <h2>Below has nothing to do with Wilson</h2>
         <figure>
-            <img src="img/Lucario.jpg" alt="Lucario" title="This is Lucario and has nothing to do with Wilson">
+            <img src="img/Lucario.jpg" width="15%" height="auto" alt="Lucario" title="This is Lucario and has nothing to do with Wilson">
             <figcaption>Lucario</figcaption>
         </figure>
         <main>
@@ -138,6 +151,26 @@
                 </table>
             </article>
         </main>
+        <br>
+        <form>
+            <!-- inline CSS -->
+            <label>First Name</label>
+            <input name="firstName" type="text" />
+            <br>
+            <label>Last Name</label>
+            <input name="lastName" type="text"/>
+            <br>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" />Male
+            <input type="radio" name="female" value="female" />Female
+            <br>
+            <label>color:</label>
+            <input type="checkbox" name="favcolor" value="Yellow" />Yellow
+            <input type="checkbox" name="favcolor" value="Green" />Green
+            <br>
+            <input type="submit" value="submit" />
+        </form>
+
         <footer>
             <p>Copyright &copy; Bulbapedia</p>
         </footer>
