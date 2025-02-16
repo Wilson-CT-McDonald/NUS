@@ -50,3 +50,12 @@ my_tuple = (1,2,3,4)
 
 my_set = {1,2,3,4}
 print(my_set.union({10,13}))
+
+my_dict = {"name":"wilson", "age":20}
+print(my_dict["name"])
+my_dict["city"]="New York"
+
+print(my_dict.keys())
+print(my_dict.values())
+
+
