@@ -1,0 +1,15 @@
+.details {
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  color: black;
+  background-color: white;
+  padding: 1rem;
+  width: 500px;
+  border-radius: 0.8rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+span {
+  color: brown;
+}

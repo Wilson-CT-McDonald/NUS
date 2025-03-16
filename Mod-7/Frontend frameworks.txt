@@ -1,0 +1,39 @@
+What are frontend frameworks?
+    - Set of tools and libraries helps the developer to build the UI
+
+Why use ff?
+    - Pre-built structures, components to create scalable (can be reused), fast accessible UI
+    - React, Angular, Vue.js, Svelte for a faster UI rendering and a semaless user experience
+
+Traditional Development Approach (MPA - Multiple-Page-Approach)
+    - Every page is a seperate HTML file stored on the server
+    - Every click on a link/Submit a form, entire page will be reloaded -> slow experience
+
+Modern Developement Approach (SPA - Single Page Application)
+    - Faster user experience
+    - More interactive, responsive Application
+    - Scalability & maintainability
+
+Component-Based Design
+    - Instead of writing the large HTML files, Break the entire UI into different components, and these components can be reused across.
+    - Each of these components are self-contained, handle their own logic and UI independently.
+    - E.g. Buttons, Navigation bars, forms, modals
+    - Like Gmail, when we create a draft or sidebar, it doesnt reload the entire page, instead it pop up an individual UI runing seperately. 
+    - The key words are resuable, independent compoent.
+    - function Button({lable, onClick})
+        {
+            return
+            <button onClick =(onClick)>label</button>;
+        }
+    - Button("Submit",submitForm); Button("Add",add);
+
+Declarative Programming
+    - instead u telling the browser, how to update the UI, we choose to describe what the UI should look like based on the data changes. 
+    - Old approach - imperative approach:
+        - let count = 0;
+          document.getElementById("btn").addEventListener("click",function()){
+            count++
+            document.getElementById("counterLabel).innerText=count;
+          }
+
+

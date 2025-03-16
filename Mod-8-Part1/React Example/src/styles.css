@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  color: blue;
+}
+
+h1 {
+  color: aquamarine;
+}
+
+h1.h2.h3 {
+  margin-bottom: 5rem;
+}
+
+p {
+  font-size: 1.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.primary-btn-md {
+  border: none;
+  color: white;
+  background-color: blue;
+  padding: 1rem;
+  font-size: small;
+  border-radius: 5rem;
+  transition: all 0.3s;
+}
+
+.primary-btn-md:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+}
