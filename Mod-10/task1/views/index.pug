@@ -1,0 +1,17 @@
+doctype html
+html
+  head
+    title Item List
+    link(rel="stylesheet", href="/style.css")
+  body
+    h1 Item List
+    ul
+      each item in items
+        li
+          | #{item.name}
+          a(href=`/edit/${item.id}`) Edit
+          a(href=`/delete/${item.id}`) Delete
+
+    form(action="/add", method="post")
+      input(type="text", name="name", placeholder="New item" required)
+      button(type="submit") Add Item
